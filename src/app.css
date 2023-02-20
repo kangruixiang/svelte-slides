@@ -9,3 +9,80 @@
   height: 100vh;
 }
 
+@layer components {
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* * {
+    outline: 1px solid black;
+  } */
+
+  body {
+    @apply text-stone-800 dark:text-stone-50 text-xl bg-stone-50 dark:bg-zinc-800 font-sans;
+  }
+  img {
+    @apply rounded-lg;
+  }
+  video {
+    @apply rounded-lg
+  }
+  h1 {
+
+  }
+  h2 {
+ 
+  }
+  h4 {
+    @apply mt-20
+  }
+  p {
+    @apply text-xl;
+  }
+  ul,
+  ol {
+    @apply text-xl;
+  }
+  ::selection {
+    @apply bg-[#f1db4e] text-zinc-800;
+  }
+  .btn {
+    @apply p-3 font-sans text-base font-semibold border-2 border-solid rounded-lg shadow btn-disabled border-zinc-800 bg-zinc-50 hover:bg-white text-zinc-800 hover:text-black;
+  }
+  .btn-dark {
+    @apply transition duration-300 border-0 btn bg-zinc-800 text-zinc-50 hover:bg-zinc-900 hover:text-white;
+  }
+  .btn-disabled {
+    @apply disabled:text-zinc-500 disabled:hover:text-zinc-500 disabled:bg-zinc-50 disabled:hover:bg-zinc-50 disabled:border-zinc-500 disabled:hover:border-zinc-500;
+  }
+
+  .label {
+    @apply my-2 font-semibold;
+  }
+  .input-text {
+    @apply w-full px-4 py-2 font-semibold border-2 border-solid rounded-md focus:bg-white dark:focus:bg-zinc-800 focus:ring-0 focus:outline-none focus:border-zinc-800 dark:focus:border-zinc-600 bg-zinc-50 border-zinc-800 dark:bg-zinc-700 dark:text-zinc-100;
+  }
+  .input-checkbox {
+    @apply w-4 h-4 border-2 border-solid rounded-sm focus:ring-0 text-zinc-800 border-zinc-800;
+  }
+  .active {
+    @apply text-black underline;
+  }
+  .selected {
+    @apply bg-red-500;
+  }
+  footer {
+    @apply text-zinc-400 mt-4 text-right  mx-auto text-sm
+  }
+  sup {
+    @apply text-xs
+  }
+  .card {
+    @apply max-w-[80%] mx-auto
+  }
+  footer li {
+    @apply text-sm
+  }
+}
