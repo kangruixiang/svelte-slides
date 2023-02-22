@@ -4,7 +4,7 @@
 <section>
   <div class="r-stretch flex items-center justify-center">
     <img
-      src="assets/table.png"
+      src="assets/Table1.png"
       alt=""
       class="border border-black border-solid"
     />
@@ -14,7 +14,7 @@
 <section>
   <div class="r-stretch flex items-center justify-center">
     <img
-      src="assets/table2.png"
+      src="assets/Table2.png"
       alt=""
       class="border border-black border-solid"
     />
@@ -24,7 +24,7 @@
 <section>
   <div class="r-stretch flex items-center justify-center">
     <img
-      src="assets/table3.png"
+      src="assets/Table3.png"
       alt=""
       class="border border-black border-solid"
     />
@@ -34,7 +34,26 @@
 <section>
   <div class="r-stretch flex items-center justify-center">
     <img
-      src="assets/table4.png"
+      src="assets/Table4.png"
+      alt=""
+      class="border border-black border-solid"
+    />
+  </div>
+</section>
+
+<section>
+  <div class="r-stretch flex items-center justify-center">
+    <img
+      src="assets/Table5.png"
+      alt=""
+      class="border border-black border-solid"
+    />
+  </div>
+</section>
+<section>
+  <div class="r-stretch flex items-center justify-center">
+    <img
+      src="assets/Table7.png"
       alt=""
       class="border border-black border-solid"
     />

@@ -7,12 +7,14 @@ specifiers:
   postcss: ^8.4.19
   reveal.js: ^4.3.1
   svelte: ^3.49.0
+  svelte-vertical-timeline: ^1.0.0
   svelte-zoom: ^1.0.16
   tailwindcss: ^3.2.4
   vite: ^3.0.0
 
 dependencies:
   reveal.js: 4.3.1
+  svelte-vertical-timeline: 1.0.0
   svelte-zoom: 1.0.16
 
 devDependencies:
@@ -793,6 +795,10 @@ packages:
     dependencies:
       svelte: 3.49.0
     dev: true
+
+  /svelte-vertical-timeline/1.0.0:
+    resolution: {integrity: sha512-o//Dhy6UTk9sNS5WZ6hPalBL+DHnFozY1T6cb4vKxOEbqAFlJyCQWYtLHBcE3zIxpclx0TtBCxQayZ4fHZ2aDg==}
+    dev: false
 
   /svelte-zoom/1.0.16:
     resolution: {integrity: sha512-rskuoy1ZAtK9D3xNP8c5XCuhMbnXtsZOiLEs8I8ZdHBqIamPpQW7dcSUPE3WOQolOZu2F33ZXqm5HKelARnuwA==}

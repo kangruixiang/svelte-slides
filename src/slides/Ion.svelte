@@ -123,6 +123,17 @@
 </section>
 
 <section>
+  <iframe
+    class="w-full aspect-video rounded-lg"
+    src="https://www.youtube.com/embed/2iTg7oAirgQ?start=201"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  />
+</section>
+
+<section>
   <div class="r-stretch">
     <img src="assets/ionConfirm.png" class="aspect-video object-cover w-full" />
 

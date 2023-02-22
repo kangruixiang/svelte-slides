@@ -391,3 +391,9 @@ section.has-dark-background h6 {
   overflow: scroll !important;
   pointer-events: auto !important;
 } */
+
+
+.slide-number {
+  padding: 1rem;
+  background-color: yellow;
+}
