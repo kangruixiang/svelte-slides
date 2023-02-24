@@ -37,8 +37,14 @@
     {
       title: "Radial probe ultrasound",
       time: "1992",
-      body: "Heinrich Becker introduced radial probe endobronchial ultrasound for endobronchial sampling",
+      body: "Heinrich Becker introduced radial probe endobronchial ultrasound for endobronchial sampling.",
       img: "assets/radial.jpeg",
+    },
+    {
+      title: "Convex probe ultrasound",
+      time: "2003",
+      body: "Kazuhiro Yasufuku first demonstrated the high diagnostic yield of the convex probe EBUS.",
+      img: "assets/ebus.jpeg",
     },
     {
       title: "Electromagnetic Navigational Bronchoscopy",
@@ -51,7 +57,7 @@
     {
       title: "Monarch™ Robotics",
       time: "March 2018",
-      body: "Monarch™ received FDA approval",
+      body: "Monarch™ received FDA approval.",
       img: "assets/monarch.jpeg",
     },
     {
@@ -65,7 +71,7 @@
     {
       title: "Ion™ Robotics",
       time: "February 2019",
-      body: "The Ion™ Endoluminal System received its FDA approval",
+      body: "The Ion™ Endoluminal System received its FDA approval.",
       img: "assets/background.avif",
     },
     {
@@ -81,27 +87,30 @@
 
 <section class="container">
   <Timeline position="left">
+    <h2>Brief History of Bronchoscopy</h2>
     {#each options as option}
-      <TimelineItem>
-        <TimelineOppositeContent slot="opposite-content">
-          {option.time}
-          {#if option.body}
-            <p>{option.body}</p>
-          {/if}
-          {#if option.img}
-            <img src={option.img} alt="" />
-          {/if}
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          {#if option.title}
-            <h3>{option.title}</h3>
-          {/if}
-        </TimelineContent>
-      </TimelineItem>
+      <div class="fragment fade-up">
+        <TimelineItem>
+          <TimelineOppositeContent slot="opposite-content">
+            {option.time}
+            {#if option.body}
+              <p>{option.body}</p>
+            {/if}
+            {#if option.img}
+              <img src={option.img} alt="" />
+            {/if}
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            {#if option.title}
+              <h3>{option.title}</h3>
+            {/if}
+          </TimelineContent>
+        </TimelineItem>
+      </div>
     {/each}
   </Timeline>
   <footer>
@@ -124,15 +133,21 @@
       </li>
 
       <li>Flexible bronchoscopy has low sensitivity for malignancy</li>
-      <li>34% for lesions &#60; 2 cm and 63% for &#62; 2 cm<sup>2</sup></li>
+      <li>
+        Diagnostic yield 34% for lesions &#60; 2 cm and 63% for &#62; 2 cm<sup
+          >2</sup
+        >
+      </li>
       <li>
         Electromagnetic navigation bronchoscopy (ENB) uses 3D mapped pathway to
         lung nodule
       </li>
-      <li>Recent study shows ENB with higher sensitivity around 70%</li>
       <li>
-        CT guided lung biopsy still have higheset sensitivity around 90%<sup
-          >3</sup
+        Recent study shows ENB with higher sensitivity around 70%<sup>3</sup>
+      </li>
+      <li>
+        CT guided lung biopsy still have highest sensitivity around 90%<sup
+          >2</sup
         >
       </li>
     </ul>
@@ -142,11 +157,11 @@
           State-of-the-Art Modalities for Peripheral Lung Nodule Biopsy. PMID:
           29433709
         </li>
-        <li>NAVIGATE Study. PMID:30476574</li>
         <li>
           Establishing the Diagnosis of Lung Cancer.
           https://doi.org/10.1378/chest.12-2353
         </li>
+        <li>NAVIGATE Study. PMID:30476574</li>
       </ol>
     </footer>
   </div>
@@ -162,27 +177,30 @@
 
 <section class="container">
   <Timeline position="left">
+    <h2>Robotics Bronchoscopy</h2>
     {#each options2 as option}
-      <TimelineItem>
-        <TimelineOppositeContent slot="opposite-content">
-          {option.time}
-          {#if option.body}
-            <p>{option.body}</p>
-          {/if}
-          {#if option.img}
-            <img src={option.img} alt="" />
-          {/if}
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          {#if option.title}
-            <h3>{option.title}</h3>
-          {/if}
-        </TimelineContent>
-      </TimelineItem>
+      <div class="fragment fade-up">
+        <TimelineItem>
+          <TimelineOppositeContent slot="opposite-content">
+            {option.time}
+            {#if option.body}
+              <p>{option.body}</p>
+            {/if}
+            {#if option.img}
+              <img src={option.img} alt="" />
+            {/if}
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            {#if option.title}
+              <h3>{option.title}</h3>
+            {/if}
+          </TimelineContent>
+        </TimelineItem>
+      </div>
     {/each}
   </Timeline>
   <footer>
@@ -212,6 +230,41 @@
       </li>
     </ol>
   </footer>
+</section>
+
+<section data-auto-animate>
+  <div class="r-stretch flex items-center space-x-4  justify-center">
+    <div class="w-1/2 flex flex-col items-center">
+      <img
+        src="assets/monarch2.jpg"
+        alt=""
+        class="h-1/2 aspect-square object-cover"
+      />
+      <video class="w-1/2 aspect-square object-cover">
+        <source src="assets/ionControl.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</section>
+
+<section data-auto-animate>
+  <div class="r-stretch flex items-center  justify-evenly">
+    <div class="w-1/2 flex flex-col items-center">
+      <img
+        src="assets/monarch2.jpg"
+        alt=""
+        class="h-1/2 aspect-square object-cover"
+      />
+      <video class="w-1/2 aspect-square object-cover">
+        <source src="assets/ionControl.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <img
+      src="assets/controller.webp"
+      alt=""
+      class="border border-black border-solid"
+    />
+  </div>
 </section>
 
 <style>

@@ -1,35 +1,88 @@
 <script>
+  import {
+    Timeline,
+    TimelineItem,
+    TimelineSeparator,
+    TimelineDot,
+    TimelineConnector,
+    TimelineContent,
+    TimelineOppositeContent,
+  } from "svelte-vertical-timeline";
+
+  const options = [
+    {
+      title: "Patient selection",
+      body: "All patients presented to clinic for evaluation of indeterminant peripheral pulmonary nodules werwe selected. One patient declined and choose ENB. Patients who were not candidates for general anesthesia were excluded.",
+    },
+    {
+      title: "Preprocedural CT",
+      body: "Thin cuts between 1-1.5 mm.",
+    },
+    {
+      title: "General anesthesia",
+      body: "All patients underwent anesthesia with tidal volume of 8 cc/kg ideal body weight, positive end expiratory pressure of 10 cm H2O, neuromuscular blockade.",
+    },
+    {
+      title: "Biopsy steps",
+      body: "Robotic catheter navigated to target lesion. Biopsy needle was inserted. Initial CBCT performed. Directional adjustments made. Repeat CBCT verified location. Biopsy performed. Final CBCT used to rule out pneumothorax.",
+    },
+  ];
 </script>
 
 <section>
-  <div class="card">
-    <h4>
-      Robotic-Assisted Navigation Bronchoscopy as a Paradigm Shift in Peripheral
-      Lung Access
-    </h4>
-    <ul>
-      <li>Published in Lung, September 18, 2020</li>
-      <li>
-        Aim of study was to evaluate diagnostic yield of obotic-assisted
-        bronchoscopy with cone beam CT
-      </li>
-      <li>Single center, prospective, observational study</li>
-      <li>
-        Patients enrolled from Mountain View, California Interventional
-        Pulmonology (IP) clinic of the Palo Alto Medical Foundation (PAMF)
-      </li>
-      <li>Patient enrolled from September 2019 to June 2020<sup>1</sup></li>
-    </ul>
-    <footer>
-      <ol>
-        <li>
-          Benn, B.S., Romero, A.O., Lum, M. et al. Robotic-Assisted Navigation
-          Bronchoscopy as a Paradigm Shift in Peripheral Lung Access. Lung 199,
-          177-186 (2021).
-          https://doi-org.wake.idm.oclc.org/10.1007/s00408-021-00421-1
-        </li>
-      </ol>
-    </footer>
+  <div class="r-fit mb-12 mt-4 font-serif flex flex-col items-center">
+    Back to the Study
   </div>
-  <aside class="notes" />
 </section>
+
+<section>
+  <div class="r-stretch flex items-center justify-center">
+    <img
+      src="assets/Table1.png"
+      alt=""
+      class="border border-black border-solid"
+    />
+  </div>
+</section>
+
+<section class="container flex">
+  <div class="w-[80%]">
+    <Timeline position="left">
+      {#each options as option}
+        <div class="fragment fade-up">
+          <TimelineItem>
+            <TimelineOppositeContent slot="opposite-content">
+              {#if option.body}
+                <p>{option.body}</p>
+              {/if}
+              {#if option.img}
+                <img src={option.img} alt="" />
+              {/if}
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+
+            <TimelineContent>
+              {#if option.title}
+                <h4>{option.title}</h4>
+              {/if}
+            </TimelineContent>
+          </TimelineItem>
+        </div>
+      {/each}
+    </Timeline>
+  </div>
+  <div class="w-[20%]" />
+</section>
+
+<style>
+  .container {
+    height: 100%;
+    overflow-y: auto !important;
+  }
+  .container p {
+    margin-top: 0;
+  }
+</style>

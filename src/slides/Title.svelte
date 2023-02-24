@@ -35,7 +35,9 @@
           >1</sup
         >
       </li>
-      <li>There is increase need for identification of lung nodules</li>
+      <li>
+        There is increase need for accurate biopsy of suspicious lung nodules
+      </li>
     </ul>
     <footer>
       <ol>

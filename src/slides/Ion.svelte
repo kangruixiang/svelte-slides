@@ -8,6 +8,41 @@
 </script>
 
 <section>
+  <div class="card">
+    <h4>
+      Robotic-Assisted Navigation Bronchoscopy as a Paradigm Shift in Peripheral
+      Lung Access
+    </h4>
+    <ul>
+      <li>Published in Lung, September 18, 2020</li>
+
+      <li>Single center, prospective, observational study</li>
+      <li>
+        Patients enrolled from Mountain View, California Interventional
+        Pulmonology (IP) clinic of the Palo Alto Medical Foundation (PAMF)
+      </li>
+      <li>52 patients enrolled from September 2019 to June 2020</li>
+      <li>
+        Aim was to evaluate diagnostic yield of robotic-assisted bronchoscopy
+        with cone beam CT
+      </li>
+      <li>Ion Endoluminal Robotic Bronchoscopy System was used</li>
+    </ul>
+    <footer>
+      <ol>
+        <li>
+          Benn, B.S., Romero, A.O., Lum, M. et al. Robotic-Assisted Navigation
+          Bronchoscopy as a Paradigm Shift in Peripheral Lung Access. Lung 199,
+          177-186 (2021).
+          https://doi-org.wake.idm.oclc.org/10.1007/s00408-021-00421-1
+        </li>
+      </ol>
+    </footer>
+  </div>
+  <aside class="notes" />
+</section>
+
+<section>
   <div class="flex justify-center w-full">
     <img
       src="assets/ionRobotic.avif"
@@ -135,6 +170,7 @@
 
 <section>
   <div class="r-stretch">
+    <h4>Our Equipment</h4>
     <img src="assets/ionConfirm.png" class="aspect-video object-cover w-full" />
 
     <footer>

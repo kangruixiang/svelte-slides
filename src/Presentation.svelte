@@ -3,7 +3,6 @@
   import Title from "./slides/Title.svelte";
   import Ion from "./slides/Ion.svelte";
   import Result from "./slides/Result.svelte";
-  import Context from "./slides/Context.svelte";
   import Methods from "./slides/Methods.svelte";
   import Timeline from "./slides/Timeline.svelte";
 
@@ -12,8 +11,6 @@
 
 <Title />
 <Timeline />
-<Context />
-<Methods />
 <Ion />
+<Methods />
 <Result />
-<Markdown />
